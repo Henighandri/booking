@@ -26,7 +26,15 @@ const List = () => {
     <div>error please try again</div>;
   }
   return (
-    <div>
+    <React.Fragment>
+        <Helmet>
+                <title>List Hotels</title>
+                <link rel="icon" href={"path"}/>
+                <meta name="description" content={"Decouvrir le sud tunisien, Visite des monuments de Dougga, randonnée au nature de bizerte, Explorez Ain Draham"}/>
+                <meta name="keywords" content={"Decouvrir le sud tunisien, Visite des monuments de Dougga, randonnée au nature de bizerte, Explorez Ain Draham"}/>
+                <meta property="og:title" content={"og:title"}/>
+                <meta property="og:description" content={"og:description"}/>
+             </Helmet>
       <Navbar />
       <Header type="list" />
       <div className="listContainer">
@@ -45,7 +53,7 @@ const List = () => {
           </div>
         </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

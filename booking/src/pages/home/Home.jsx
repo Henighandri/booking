@@ -9,7 +9,15 @@ import ProportyList from "../../components/proportyList/ProportyList";
 import "./home.css";
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
+       <Helmet>
+                <title>Voyage</title>
+                <link rel="icon" href={"path"}/>
+                <meta name="description" content={"Decouvrir le sud tunisien, Visite des monuments de Dougga, randonnée au nature de bizerte, Explorez Ain Draham"}/>
+                <meta name="keywords" content={"Decouvrir le sud tunisien, Visite des monuments de Dougga, randonnée au nature de bizerte, Explorez Ain Draham"}/>
+                <meta property="og:title" content={"og:title"}/>
+                <meta property="og:description" content={"og:description"}/>
+             </Helmet>
       <Navbar />
       <Header />
       <div className="homeContainer">
@@ -21,7 +29,7 @@ const Home = () => {
         <MailList />
         <Footer />
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

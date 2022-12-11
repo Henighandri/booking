@@ -77,7 +77,15 @@ const Hotel = () => {
     <div>error please try again</div>;
   }
   return (
-    <div>
+    <React.Fragment>
+       <Helmet>
+                <title>Hotel</title>
+                <link rel="icon" href={"path"}/>
+                <meta name="description" content={"Decouvrir le sud tunisien, Visite des monuments de Dougga, randonnée au nature de bizerte, Explorez Ain Draham"}/>
+                <meta name="keywords" content={"Decouvrir le sud tunisien, Visite des monuments de Dougga, randonnée au nature de bizerte, Explorez Ain Draham"}/>
+                <meta property="og:title" content={"og:title"}/>
+                <meta property="og:description" content={"og:description"}/>
+             </Helmet>
       {openImage && (
         <div className="modalContainer">
           <FontAwesomeIcon
@@ -94,7 +102,7 @@ const Hotel = () => {
 
             <img
               src={data.hotel.photos[imageIndex]}
-              alt=""
+              alt="randonnée tunisie, incroyable randonnées tunisie,voyage avec hébergement, camping découverte nature Tunisie"
               className="modalImage"
             />
 
@@ -137,7 +145,7 @@ const Hotel = () => {
                       <img
                         key={index}
                         src={image}
-                        alt=""
+                        alt="randonnée tunisie, incroyable randonnées tunisie,voyage avec hébergement, camping découverte nature Tunisie"
                         className="hotelImg"
                         onClick={() => selectHandler(index)}
                       />
@@ -182,7 +190,7 @@ const Hotel = () => {
       </div>
       <MailList />
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 

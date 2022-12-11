@@ -38,6 +38,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="lContainer">
+        <span className="title">Login</span>
         <input
           type="email"
           placeholder="email"
